@@ -1,9 +1,10 @@
 package Teht03Composite;
 
-import java.util.List;
+public class Kotelo extends Komposiitti {
 
-public class Kotelo implements Laiteosa {
+	public Kotelo(double hinta) {
+		super(hinta);
+	}
+	
 
-	private double hinta;
-	private List<Laiteosa> osat;
 }

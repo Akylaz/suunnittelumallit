@@ -1,8 +1,19 @@
 package Teht03Composite;
 
-import java.util.List;
-
 public class Muistipiiri implements Laiteosa {
 	private double hinta;
-	private List<Laiteosa> osat;
+	
+	public Muistipiiri(double hinta) {
+		this.hinta = hinta;
+	}
+
+	@Override
+	public double getHinta() {
+		return this.hinta;
+	}
+	
+	@Override
+	public String toString() {
+		return this.getClass().getSimpleName();
+	}
 }
